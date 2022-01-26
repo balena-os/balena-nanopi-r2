@@ -1,0 +1,69 @@
+From 4fafc2f81924b2b33f9fe42556a809a7eb36ded5 Mon Sep 17 00:00:00 2001
+From: Florin Sarbu <florin@balena.io>
+Date: Fri, 28 Jan 2022 14:03:31 +0100
+Subject: [PATCH] Revert "random: fix crng_ready() test"
+
+This reverts commit 43838a23a05fbd13e47d750d3dfd77001536dd33
+from our kernel tree.
+
+We revert this because with that patch, balena gets started
+with a delay because of the lack of entropy.
+
+Upstream-Status: Inappropriate [configuration]
+Signed-off-by: Florin Sarbu <florin@balena.io>
+---
+ drivers/char/random.c | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/drivers/char/random.c b/drivers/char/random.c
+index 344a57ebb35e..1defd0744e94 100644
+--- a/drivers/char/random.c
++++ b/drivers/char/random.c
+@@ -461,7 +461,7 @@ static struct crng_state primary_crng = {
+  * its value (from 0->1->2).
+  */
+ static int crng_init = 0;
+-#define crng_ready() (likely(crng_init > 1))
++#define crng_ready() (likely(crng_init > 0))
+ static int crng_init_cnt = 0;
+ static unsigned long crng_global_init_time = 0;
+ #define CRNG_INIT_CNT_THRESH (2*CHACHA_KEY_SIZE)
+@@ -882,7 +882,7 @@ static int crng_fast_load(const char *cp, size_t len)
+ 
+ 	if (!spin_trylock_irqsave(&primary_crng.lock, flags))
+ 		return 0;
+-	if (crng_init != 0) {
++	if (crng_ready()) {
+ 		spin_unlock_irqrestore(&primary_crng.lock, flags);
+ 		return 0;
+ 	}
+@@ -1000,7 +1000,7 @@ static void _extract_crng(struct crng_state *crng,
+ {
+ 	unsigned long v, flags;
+ 
+-	if (crng_ready() &&
++	if (crng_init > 1 &&
+ 	    (time_after(crng_global_init_time, crng->init_time) ||
+ 	     time_after(jiffies, crng->init_time + CRNG_RESEED_INTERVAL)))
+ 		crng_reseed(crng, crng == &primary_crng ? &input_pool : NULL);
+@@ -1279,7 +1279,7 @@ void add_interrupt_randomness(int irq, int irq_flags)
+ 	add_interrupt_bench(cycles);
+ 	this_cpu_add(net_rand_state.s1, fast_pool->pool[cycles & 3]);
+ 
+-	if (unlikely(crng_init == 0)) {
++	if (!crng_ready()) {
+ 		if ((fast_pool->count >= 64) &&
+ 		    crng_fast_load((char *) fast_pool->pool,
+ 				   sizeof(fast_pool->pool))) {
+@@ -2299,7 +2299,7 @@ void add_hwgenerator_randomness(const char *buffer, size_t count,
+ {
+ 	struct entropy_store *poolp = &input_pool;
+ 
+-	if (unlikely(crng_init == 0)) {
++	if (!crng_ready()) {
+ 		crng_fast_load(buffer, count);
+ 		return;
+ 	}
+-- 
+2.17.1
+
