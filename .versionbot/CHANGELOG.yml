@@ -1,1 +1,14 @@
-[]
+- commits:
+    - subject: Add initial support for nanopi-r2c
+      hash: 2b8564564339c5c8ad856c0eb9d35571255bde4e
+      body: ""
+      footer:
+        Changelog-entry: Add initial support for nanopi-r2c
+        changelog-entry: Add initial support for nanopi-r2c
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.89.8
+  title: "nanopi-r2c: Initial support for this board"
+  date: 2022-01-29T00:01:13.913Z
