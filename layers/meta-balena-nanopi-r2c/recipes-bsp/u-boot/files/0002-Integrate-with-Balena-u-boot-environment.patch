@@ -1,0 +1,52 @@
+Index: rk3328-boot/boot.cmd
+===================================================================
+--- a/rk3328-boot/boot.cmd
++++ b/rk3328-boot/boot.cmd
+@@ -16,8 +16,8 @@ setenv earlycon "off"
+ 
+ echo "Boot script loaded from ${devtype} ${devnum}"
+ 
+-if test -e ${devtype} ${devnum} ${prefix}rkEnv.txt; then
+-	load ${devtype} ${devnum} ${load_addr} ${prefix}rkEnv.txt
++if test -e ${devtype} ${resin_dev_index}:${resin_root_part} ${prefix}rkEnv.txt; then
++	load ${devtype} ${resin_dev_index}:${resin_root_part} ${load_addr} ${prefix}rkEnv.txt
+ 	env import -t ${load_addr} ${filesize}
+ fi
+ 
+@@ -31,18 +31,18 @@ if test "${bootlogo}" = "true"; then set
+ # get PARTUUID of first partition on SD/eMMC the boot script was loaded from
+ if test "${devtype}" = "mmc"; then part uuid mmc ${devnum}:1 partuuid; fi
+ 
+-setenv bootargs "root=${rootdev} rootwait rootfstype=${rootfstype} ${consoleargs} consoleblank=0 loglevel=${verbosity} ubootpart=${partuuid} usb-storage.quirks=${usbstoragequirks} ${extraargs} ${extraboardargs}"
++setenv bootargs "${resin_kernel_root} ${os_cmdline} rootwait rootfstype=${rootfstype} ${consoleargs} consoleblank=0 loglevel=${verbosity} ubootpart=${partuuid} usb-storage.quirks=${usbstoragequirks} ${extraargs} ${extraboardargs}"
+ 
+ if test "${docker_optimizations}" = "on"; then setenv bootargs "${bootargs} cgroup_enable=memory swapaccount=1"; fi
+ 
+-load ${devtype} ${devnum} ${fdt_addr_r} ${prefix}${fdtfile}
+-load ${devtype} ${devnum} ${kernel_addr_r} ${prefix}Image
++load ${devtype} ${resin_dev_index}:${resin_root_part} ${fdt_addr_r} ${prefix}${fdtfile}
++load ${devtype} ${resin_dev_index}:${resin_root_part} ${kernel_addr_r} ${prefix}Image
+ 
+ fdt addr ${fdt_addr_r}
+ fdt resize 65536
+ # Load environment file
+ for overlay_file in ${overlays}; do
+-	if load ${devtype} ${devnum} ${load_addr} ${prefix}overlay/${overlay_prefix}-${overlay_file}.dtbo; then
++	if load ${devtype} ${resin_dev_index}:${resin_root_part} ${load_addr} ${prefix}overlay/${overlay_prefix}-${overlay_file}.dtbo; then
+ 		echo "Applying kernel provided DT overlay ${overlay_prefix}-${overlay_file}.dtbo"
+ 		fdt apply ${load_addr} || setenv overlay_error "true"
+ 	fi
+@@ -50,10 +50,10 @@ done
+ 
+ if test "${overlay_error}" = "true"; then
+ 	echo "Error applying DT overlays, restoring original DT"
+-	load ${devtype} ${devnum} ${fdt_addr_r} ${prefix}${fdtfile}
++	load ${devtype} ${resin_dev_index}:${resin_root_part} ${fdt_addr_r} ${prefix}${fdtfile}
+ else
+-	if test -e ${devtype} ${devnum} ${prefix}fixup.scr; then
+-		load ${devtype} ${devnum} ${load_addr} ${prefix}fixup.scr
++	if test -e ${devtype} ${resin_dev_index}:${resin_root_part} ${prefix}fixup.scr; then
++		load ${devtype} ${resin_dev_index}:${resin_root_part} ${load_addr} ${prefix}fixup.scr
+ 		echo "Applying user provided fixup script (fixup.scr)"
+ 		source ${load_addr}
+ 	fi
