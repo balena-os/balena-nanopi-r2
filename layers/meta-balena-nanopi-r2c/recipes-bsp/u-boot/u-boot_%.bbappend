@@ -26,6 +26,9 @@ do_configure_append() {
     merge_config.sh -m .config ${@" ".join(find_cfgs(d))}
 }
 
+# force to always compile so we make sure the bellow bootloader images get deployed
+do_compile[nostamp] = "1"
+
 do_compile_append() {
     # create bootloader image
     loaderimage --pack --uboot ${SPL_BINARY} ${DEPLOY_DIR_IMAGE}/u-boot.img 0x200000
