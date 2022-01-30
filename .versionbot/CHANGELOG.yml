@@ -1,4 +1,21 @@
 - commits:
+    - subject: Do not use sstate for compiling u-boot
+      hash: 5a4f1b6f34427c610ec5f388a8d0addadcf6796d
+      body: |
+        We need to not use sstate because we have to be
+        sure we always have the boot images available
+        in the deploy directory.
+      footer:
+        Changelog-entry: Do not use sstate for compiling u-boot
+        changelog-entry: Do not use sstate for compiling u-boot
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.89.8+rev1
+  title: "u-boot: Force to always run the compile task"
+  date: 2022-01-30T12:57:44.390Z
+- commits:
     - subject: Add initial support for nanopi-r2c
       hash: 2b8564564339c5c8ad856c0eb9d35571255bde4e
       body: ""
