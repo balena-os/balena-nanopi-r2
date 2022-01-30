@@ -1,4 +1,19 @@
 - commits:
+    - subject: Delete from .coffee file the deprecated supportsBlink field
+      hash: e940c4127dfbb0921ad9b01c38fd6528c4130ca7
+      body: |
+        This is now deprecated in favour of the hw contracts
+      footer:
+        Changelog-entry: Delete from .coffee file the deprecated supportsBlink field
+        changelog-entry: Delete from .coffee file the deprecated supportsBlink field
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.89.8+rev2
+  title: "nanopi-r2c.coffee: Delete deprecated supportsBlink field"
+  date: 2022-01-30T13:26:16.566Z
+- commits:
     - subject: Do not use sstate for compiling u-boot
       hash: 5a4f1b6f34427c610ec5f388a8d0addadcf6796d
       body: |
