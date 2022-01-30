@@ -14,7 +14,6 @@ module.exports =
                 windows: 'https://www.balena.io/docs/learn/getting-started/nanopi-r2c/nodejs/'
                 osx: 'https://www.balena.io/docs/learn/getting-started/nanopi-r2c/nodejs/'
                 linux: 'https://www.balena.io/docs/learn/getting-started/nanopi-r2c/nodejs/'
-        supportsBlink: true
 
         options: [ networkOptions.group ]
 
