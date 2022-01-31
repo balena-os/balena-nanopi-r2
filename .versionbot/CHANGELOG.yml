@@ -1,4 +1,19 @@
 - commits:
+    - subject: Add support for Motorcomm YT8521 on NanoPi R2C
+      hash: 3c2c01b4281b7bff1cfebc39edbadbfac73ca1d7
+      body: |
+        This is the second ethernet transceiver used on the NanoPi R2C
+      footer:
+        Changelog-entry: Add support for Motorcomm YT8521 on NanoPi R2C
+        changelog-entry: Add support for Motorcomm YT8521 on NanoPi R2C
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.89.8+rev3
+  title: "linux-stable: Add support for Motorcomm YT8521"
+  date: 2022-01-31T10:54:43.657Z
+- commits:
     - subject: Delete from .coffee file the deprecated supportsBlink field
       hash: e940c4127dfbb0921ad9b01c38fd6528c4130ca7
       body: |

@@ -1,6 +1,11 @@
 # v2.89.8
 ## (2022-01-29)
 
+# v2.89.8+rev3
+## (2022-01-31)
+
+* Add support for Motorcomm YT8521 on NanoPi R2C [Florin Sarbu]
+
 # v2.89.8+rev2
 ## (2022-01-30)
 
