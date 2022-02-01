@@ -1,4 +1,20 @@
 - commits:
+    - subject: Switch to kernel 5.15.11 supplied by the hardware vendor
+      hash: 8b648448b7b03cdadf6e453550f294264e2ca803
+      body: |
+        This is the kernel version supplied by the hw vendor
+        and it has both eth ports working.
+      footer:
+        Changelog-entry: Switch to kernel 5.15.11 supplied by the hardware vendor
+        changelog-entry: Switch to kernel 5.15.11 supplied by the hardware vendor
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.89.8+rev3
+  title: "nanopi-r2c: Switch to kernel 5.15.11"
+  date: 2022-02-01T10:25:40.398Z
+- commits:
     - subject: Delete from .coffee file the deprecated supportsBlink field
       hash: e940c4127dfbb0921ad9b01c38fd6528c4130ca7
       body: |

@@ -1,6 +1,11 @@
 # v2.89.8
 ## (2022-01-29)
 
+# v2.89.8+rev3
+## (2022-02-01)
+
+* Switch to kernel 5.15.11 supplied by the hardware vendor [Florin Sarbu]
+
 # v2.89.8+rev2
 ## (2022-01-30)
 
