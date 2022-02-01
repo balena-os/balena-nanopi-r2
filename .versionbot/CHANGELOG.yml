@@ -1,4 +1,116 @@
 - commits:
+    - subject: Update meta-balena from v2.89.8 to v2.89.11
+      hash: 6ec6eb322a20d62bfaa07e8c21b3831fadd843e4
+      body: |
+        Update meta-balena from 2.89.8 to 2.89.11
+      footer:
+        Changelog-entry: Update meta-balena from v2.89.8 to v2.89.11
+        changelog-entry: Update meta-balena from v2.89.8 to v2.89.11
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested:
+        - commits:
+            - subject: "image_types_balena: Augment dependency on u-boot do_deploy task"
+              hash: e1782d968caa20e407386ba58bff3b1842006e9a
+              body: >
+                Some BSPs might only make use of UBOOT_MACHINE so let's consider
+
+                this case in addition to UBOOT_CONFIG when setting dependency for
+
+                u-boot's do_deploy task.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-2.89.11
+          title: "image_types_balena: Augment dependency on u-boot do_deploy task"
+          date: 2022-01-29T08:06:09.408Z
+        - commits:
+            - subject: "tests: relax boot splash screen check"
+              hash: 114b0f752f3b6c25e959ea193a501b5cd669fa7c
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.89.10
+          title: Ryan/boot splash improvement
+          date: 2022-01-28T10:11:36.644Z
+        - commits:
+            - subject: archive logs using local ssh
+              hash: 763fd146f042f60b4df5498d41e4dfe06dc931fe
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: put archiver in the right place
+              hash: 69234e0dff6dc1bd08bf70bd07d06d4c2b7d4edb
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: Enable UART serial console for supported devices
+              hash: 57733d47160d019452d8f9316a7728ac65bb9581
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+            - subject: archive image on teardown
+              hash: 68cf636207c04a0a8f81e727edafda3bb53bfa31
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: put device in dev mode
+              hash: f1cd979692cd16dd93d8354230f5317bb78e76f8
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: "tests: add extra logging to cloud suite"
+              hash: 0f39876b55475b654cfed4b20dfda6243d21908f
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.89.9
+          title: "tests: add extra logging to cloud suite"
+          date: 2022-01-27T14:55:54.155Z
+  version: 2.89.11
+  title: "layers/meta-balena: Update to v2.89.11"
+  date: 2022-02-01T13:25:38.331Z
+- commits:
     - subject: Switch to kernel 5.15.11 supplied by the hardware vendor
       hash: 8b648448b7b03cdadf6e453550f294264e2ca803
       body: |
