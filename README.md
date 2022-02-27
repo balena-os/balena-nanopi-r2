@@ -1,6 +1,4 @@
-# balena-nanopi-r2c repository
-
-## Clone/Initialize the repository
+## Clone / Initialize this repository
 
 There are two ways of initializing this repository:
 * Clone this repository with "git clone --recursive".
@@ -43,7 +41,7 @@ See below for using the build script.
 
 ### Issues
 
-For issues please use this section: https://github.com/balena-os/balena-nanopi-r2c/issues
+See [Issues](../../issues) section
 
 ### Pull requests
 
@@ -51,6 +49,7 @@ To contribute send github pull requests targeting this repository.
 
 Please refer to: [Yocto Contribution Guidelines](https://wiki.yoctoproject.org/wiki/Contribution_Guidelines#General_Information) and try to use the commit log format as stated there. Example:
 ```
+
 <component>: Short description
 
 I'm going to explain here what my commit does in a way that history
@@ -75,11 +74,11 @@ Also, every update to `meta-balena` should be separated into its own commit, if 
 An example of a valid commit updating `meta-balena` is:
 
 ```
-layers/meta-balena: Update to v2.73.0
+layers/meta-balena: Update to v2.24.0
 
-Update meta-balena from 2.72.0 to 2.73.0
+Update meta-balena from 2.19.0 to 2.24.0
 
-Changelog-entry: Update the meta-balena submodule from v2.72.0 to v2.73.0
+Changelog-entry: Update meta-balena from v2.19.0 to v2.24.0
 ```
 
 Make sure you mention the issue addressed by a PR. See:
