@@ -1,4 +1,422 @@
 - commits:
+    - subject: Update meta-balena from v2.89.11 to v2.91.1
+      hash: ec030374015be32f49a1f2dac3dacb4e64a20ad1
+      body: |
+        Update meta-balena from 2.89.11 to 2.91.1
+      footer:
+        Changelog-entry: Update meta-balena from v2.89.11 to v2.91.1
+        changelog-entry: Update meta-balena from v2.89.11 to v2.91.1
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested:
+        - commits:
+            - subject: "tests/cloud: wait for update lock message in logs"
+              hash: c50dd793f7409cb4b899e859478730ebe3c576e0
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+            - subject: "tests/cloud: register teardown before  online"
+              hash: 2b6f8cc7b91472ebb612c60d56044cbc03af3ca8
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.91.1
+          title: "'fix journal log retrieval in cloud suite, and try to make override lock
+            test consistant'"
+          date: 2022-02-21T10:48:39.255Z
+        - commits:
+            - subject: "openssh: Add a dependency on os-sshkeys"
+              hash: 0abc9213ba004325b77d96541e856aaf93cfdde2
+              body: >
+                This is required so that changes in the public keys are picked
+                up
+
+                by the SSH server.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-supervisor: Add dependency on root CA"
+              hash: 64cb45211a909b25170227079a400c2dfc9afae9
+              body: >
+                This is required so that the supervisor picks up a change in the
+                root CA
+
+                certificate.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena: Add dependency on balena-hostname"
+              hash: b4d9569261de3a6640394ff416264f9e64c5367b
+              body: >
+                This is needed so that the hostname change is picked up by the
+                container
+
+                applications.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: Make services configurable
+              hash: eb2028e5ed477ac4626bc55180cd872cd93f67b7
+              body: >
+                Changes to the system configuration will now restart several
+                services.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "classes: Add balena-configurable"
+              hash: 5b26f9200e8051859906016e84c03ab3d72a11d1
+              body: >
+                This class adds support to apply configuration changes to a
+                systemd
+
+                unit.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: "balena-config-vars: Split config.json configuration on write"
+              hash: cd7dcc30dc58255d5c84c6e64142f4073797d557
+              body: >
+                When config.json is written, use the config.json unit
+                configuration to create
+
+                per-unit configuration files extracts.
+
+
+                These will then be monitored by the respective service units to trigger
+
+                restarts, so that service units will only be restarted when there are
+
+                configuration changes that apply to them.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+            - subject: Remove config-json.target
+              hash: 5e5de909b648d97ca949e7f6fed08ebbd6471893
+              body: >
+                Unit files that are configured via config.json and want to be
+                restarted
+
+                on config.json changes are part of this target.
+
+
+                This causes a burst of service restarts each time config.json changes,
+
+                independently of whether the configuration changes applies to the unit
+
+                or not.
+
+
+                This commit removes all config-json.target instances in preparation for
+
+                the introduction of a better, more fine grained mechanism.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.91.0
+          title: "'Per-unit configuration files'"
+          date: 2022-02-14T09:30:35.337Z
+        - commits:
+            - subject: "resin-init-flasher: check for UEFI mode and set config variables"
+              hash: 102a710fbbcbbd347d801263a9b96e432ec5e7b9
+              body: |
+                Check to see whether we are running in UEFI mode and set secure
+                boot configuration variables as appropriate.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Mark Corbin <mark@balena.io>
+                signed-off-by: Mark Corbin <mark@balena.io>
+              author: Mark Corbin
+              nested: []
+            - subject: "resin-init-flasher: Fix flashing progress reporting for LUKS"
+              hash: 5c44a257073a993c81692e09eabba842f2aaca1a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: "resin-init-flasher: Use flasher kernel to emulate stage2 bootloader
+                with LUKS"
+              hash: ebd9c9b775cb82247c1cd9b5ed4fe44864aa2343
+              body: >
+                In order to avoid the need to unlock encrypted partitions in
+                GRUB we want
+
+                to use a custom stage2 bootloader. Since that is not ready yet, emulate that
+
+                by copying flasher kernel to the EFI partition, start it from GRUB, have it
+
+                unlock all the partitions, find the real kernel and kexec into it.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+            - subject: "resin-init-flasher: Add support for opt-in full disk encryption"
+              hash: 857f44dc37ed28d2bfe285e0243a9894d7315ffe
+              body: >
+                If resin-init-flasher.conf has LUKS=1 flasher will:
+
+                - Add extra 2MB to each partition for the LUKS header
+
+                - Split resin-boot into EFI and linux boot
+
+                - LUKS-format the partitions, copy image contents after unlocking
+
+                - Propagate signatures for secure boot
+
+
+                The default behavior (LUKS undefined) is unchanged
+              footer:
+                Change-Type: minor
+                change-type: minor
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.90.0
+          title: "'Update flasher for LUKS encryption'"
+          date: 2022-02-13T18:21:21.805Z
+        - commits:
+            - subject: "README: Update versioning information"
+              hash: 3ac5a5aaac1be6364a5ec8519b313b1da979b6a3
+              body: >
+                The `balena-<board>` repositories now use the same versioning
+                scheme as
+
+                application containers. This commit reflects this change in the
+
+                documentation.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.89.19
+          title: "'README: Update versioning information'"
+          date: 2022-02-13T12:49:17.731Z
+        - commits:
+            - subject: fix cloud suite teardown
+              hash: 6fd7cb7ac9b7612db859afe931c0c34f693d3521
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: meta-balena-2.89.18
+          title: "'fix cloud suite teardown'"
+          date: 2022-02-11T20:46:38.043Z
+        - commits:
+            - subject: "suites/hup: Add under-voltage test before and after HUP"
+              hash: e12de74e6cdcec2af488a8e5f8e0e14613ac1658
+              body: |
+                We add this this check since we discovered
+                that with newer boot firmware the Pi4 will
+                not reboot when under-voltage is reported.
+
+                We don't mark the test as failed in
+                this case, since there may be devices that
+                continue to work even if under-powered and we
+                don't want to block or delay development if the
+                DUT is remote and cannot be checked or replaced
+                easily.
+
+                This check provides an indication for further
+                debugging of failed test cases.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-2.89.17
+          title: "'[tests]: Add under-voltage check for OS and HUP suites'"
+          date: 2022-02-09T16:48:41.543Z
+        - commits:
+            - subject: "balena-supervisor: Update balena-supervisor to v12.11.32"
+              hash: d222a1f6c84ff98f7698efd671063a0eeebb3ae3
+              body: >
+                Includes improvements when writing to `config.json` to reduce
+                the chances of corruption.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Felipe Lalanne <felipe@balena.io>
+                signed-off-by: Felipe Lalanne <felipe@balena.io>
+              author: Felipe Lalanne
+              nested: []
+          version: meta-balena-2.89.16
+          title: "'balena-supervisor: Update balena-supervisor to v12.11.32'"
+          date: 2022-02-07T15:27:34.945Z
+        - commits:
+            - subject: "resindataexpander: do not return after resizing the partition only"
+              hash: dfb9a2e0b30ac5bbfef24332487ef537b6a830b1
+              body: >
+                After moving the partition resizing code to execute on each
+                boot,
+
+                we made it unreachable on first boot. We must not exit the script
+
+                after resizing the partition only because that way the resizing
+
+                is only finished on 2nd boot.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Michal Toman <michalt@balena.io>
+                signed-off-by: Michal Toman <michalt@balena.io>
+              author: Michal Toman
+              nested: []
+          version: meta-balena-2.89.15
+          title: "'resindataexpander: do not return after resizing the partition only'"
+          date: 2022-02-07T10:54:58.341Z
+        - commits:
+            - subject: "resin-u-boot.bbclass: Do not error if no config_defaults.h"
+              hash: 74b297cd03bd6f6f8af9d4a9e60514770420a218
+              body: |
+                The header has been removed in upstream commit
+                5c6a4d5a2779d7c2611319076d9aa4a23981855f
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-2.89.14
+          title: "'resin-u-boot.bbclass: Do not error if no config_defaults.h'"
+          date: 2022-02-03T17:15:47.568Z
+        - commits:
+            - subject: "docker-disk: Tag the supervisor digest with the repo name"
+              hash: 52c2b0843bc19865fbe2298e508a9196c7143a2f
+              body: >
+                This will allow us to refer to the supervisor image by the repo
+                name
+
+                in docker commands, like docker inspect, and prevent re-downloading the
+
+                image even though it already exists as an untagged digest.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: meta-balena-2.89.13
+          title: "docker-disk: Tag the supervisor digest with the repo name"
+          date: 2022-02-01T21:39:09.997Z
+        - commits:
+            - subject: "resindataexpander: expand fs independent of partition"
+              hash: 2889cb431e02f1f3e030f6c05a42be7374457eeb
+              body: >
+                When resizing the filesystem fails, such as when resize2fs won't
+                touch
+
+                it because it's dirty, the partition gets resized, but not the
+
+                filesystem. The script will not attempt to resize the filesystem again,
+
+                as it detects the partition has already been resized.
+
+
+                Split these actions apart, so that the filesystem resize is always
+
+                attempted. If resize2fs detects that the filesystem is already filling
+
+                available space, it will exit with no action taken.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Joseph Kogut <joseph@balena.io>
+                signed-off-by: Joseph Kogut <joseph@balena.io>
+              author: Joseph Kogut
+              nested: []
+          version: meta-balena-2.89.12
+          title: "resindataexpander: expand fs independent of partition"
+          date: 2022-01-31T10:24:09.275Z
+    - subject: Update balena-yocto-scripts to v1.17.2
+      hash: 42d28430cccba231270f41558c90f6c213d34af8
+      body: |
+        Update balena-yocto-scripts from v1.17.1 to v1.17.2
+      footer:
+        Change-type: patch
+        change-type: patch
+        Changelog-entry: Update balena-yocto-scripts to v1.17.2
+        changelog-entry: Update balena-yocto-scripts to v1.17.2
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested:
+        - commits:
+            - subject: "prepare-and-start: Remove balena login"
+              hash: 67568d3a5eceb45ee65c245baae18fa299366f9e
+              body: |
+                The login will happen as needed.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.17.2
+          title: "'prepare-and-start: Remove balena login'"
+          date: 2022-02-25T09:19:00.323Z
+  version: 2.91.1
+  title: "'Release v2.91.1'"
+  date: 2022-02-28T00:17:24.477Z
+- commits:
     - subject: Update meta-balena from v2.89.8 to v2.89.11
       hash: 6ec6eb322a20d62bfaa07e8c21b3831fadd843e4
       body: |
