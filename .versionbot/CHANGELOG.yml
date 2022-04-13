@@ -1,4 +1,19 @@
 - commits:
+    - subject: Add support for NanoPi R2S
+      hash: 5e26585c5611f30a2026d2719f4c14d99d51e637
+      body: |
+        We are adding support for NanoPi R2S as per customer request
+      footer:
+        Changelog-entry: Add support for NanoPi R2S
+        changelog-entry: Add support for NanoPi R2S
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.94.4+rev2
+  title: "'Add nanopi r2s'"
+  date: 2022-04-13T14:23:08.993Z
+- commits:
     - subject: Specify full path in repo.yml upstreams
       hash: 39a69532e9ce1612c99dbcc6a65e4d124c351f27
       body: |

@@ -1,6 +1,11 @@
 # v2.89.8
 ## (2022-01-29)
 
+# v2.94.4+rev2
+## (2022-04-13)
+
+* Add support for NanoPi R2S [Florin Sarbu]
+
 # v2.94.4+rev1
 ## (2022-04-13)
 
