@@ -1,5 +1,6 @@
 # Supported machines
 #MACHINE ?= "nanopi-r2c"
+#MACHINE ?= "nanopi-r2s"
 
 # this does not compile at the moment so let's disable it
 BALENA_DISABLE_KERNEL_HEADERS = "1"
