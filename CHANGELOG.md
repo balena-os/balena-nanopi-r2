@@ -1,6 +1,11 @@
 # v2.89.8
 ## (2022-01-29)
 
+# v2.94.4+rev1
+## (2022-04-13)
+
+* Specify full path in repo.yml upstreams [Florin Sarbu]
+
 # v2.94.4
 ## (2022-03-10)
 

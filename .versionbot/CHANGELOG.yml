@@ -1,4 +1,20 @@
 - commits:
+    - subject: Specify full path in repo.yml upstreams
+      hash: 39a69532e9ce1612c99dbcc6a65e4d124c351f27
+      body: |
+        This is required so that versionist can automatically include nested
+        changelogs from renovate PRs.
+      footer:
+        Changelog-entry: Specify full path in repo.yml upstreams
+        changelog-entry: Specify full path in repo.yml upstreams
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.94.4+rev1
+  title: "'repo.yml: Specify full path in upstream'"
+  date: 2022-04-13T13:53:22.636Z
+- commits:
     - subject: Update meta-balena from v2.91.1 to v2.94.4
       hash: 8bc011d8b8502ed7ba0a582734badb0194b5494d
       body: |
