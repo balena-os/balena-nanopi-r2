@@ -16,8 +16,8 @@ SRC_URI_append = " \
     file://balenaos_bootcommand.cfg \
 "
 
-BALENA_BOOT_PART_nanopi-r2c = "4"
-BALENA_DEFAULT_ROOT_PART_nanopi-r2c = "5"
+BALENA_BOOT_PART_nanopi-r2s = "4"
+BALENA_DEFAULT_ROOT_PART_nanopi-r2s = "5"
 
 # fix for the BSP overwriting the configure() task
 # we want to have our configs applied even with the BSP messing with the build tasks
