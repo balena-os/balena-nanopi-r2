@@ -1,4 +1,18 @@
 - commits:
+    - subject: Add renovate configuration
+      hash: 50953fe43654620686aaeb3b8124d78496cce6d6
+      body: ""
+      footer:
+        Changelog-entry: Add renovate configuration
+        changelog-entry: Add renovate configuration
+        Signed-off-by: Florin Sarbu <florin@balena.io>
+        signed-off-by: Florin Sarbu <florin@balena.io>
+      author: Florin Sarbu
+      nested: []
+  version: 2.94.4+rev4
+  title: "'Add renovate configuration'"
+  date: 2022-04-14T10:48:21.281Z
+- commits:
     - subject: Use correct dtb name in u-boot for R2C or R2S
       hash: 02951ba873cb5ca36d7ebfcdc2ccaa0242051da1
       body: ""

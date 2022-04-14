@@ -1,6 +1,11 @@
 # v2.89.8
 ## (2022-01-29)
 
+# v2.94.4+rev4
+## (2022-04-14)
+
+* Add renovate configuration [Florin Sarbu]
+
 # v2.94.4+rev3
 ## (2022-04-14)
 
