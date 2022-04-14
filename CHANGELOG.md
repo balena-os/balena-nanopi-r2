@@ -1,6 +1,11 @@
 # v2.89.8
 ## (2022-01-29)
 
+# v2.94.4+rev3
+## (2022-04-14)
+
+* Use correct dtb name in u-boot for R2C or R2S [Florin Sarbu]
+
 # v2.94.4+rev2
 ## (2022-04-13)
 
