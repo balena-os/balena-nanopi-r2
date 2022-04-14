@@ -16,6 +16,10 @@ SRC_URI_append = " \
     file://balenaos_bootcommand.cfg \
 "
 
+SRC_URI_append_nanopi-r2c = " \
+    file://r2c.cfg \
+"
+
 BALENA_BOOT_PART_nanopi-r2s = "4"
 BALENA_DEFAULT_ROOT_PART_nanopi-r2s = "5"
 
