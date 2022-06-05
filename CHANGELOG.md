@@ -1,6 +1,20 @@
 # v2.89.8
 ## (2022-01-29)
 
+# v2.98.39+rev1
+## (2022-06-05)
+
+
+<details>
+<summary> Update contracts to 58bcfbc0b0237177c51db2d7120e61d70e9c415b [Renovate Bot] </summary>
+
+> ## contracts-2.0.2
+> ### (2022-06-05)
+> 
+> * sw.os - hw.device-type: Update Xavier NX SD and Xavier NX eMMC to 32.7.1 [Alexandru Costache]
+> 
+</details>
+
 # v2.98.39
 ## (2022-06-04)
 
