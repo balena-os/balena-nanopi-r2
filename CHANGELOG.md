@@ -1,6 +1,22 @@
 # v2.89.8
 ## (2022-01-29)
 
+# v2.100.11
+## (2022-07-25)
+
+
+<details>
+<summary> Update layers/meta-balena to e646204762ac7abb2407a0e1dba8689aeade70f4 [renovate[bot]] </summary>
+
+> ## meta-balena-2.100.11
+> ### (2022-07-25)
+> 
+> * test: os: chrony: Double the wait for time skew test [Kyle Harding]
+> * os: tests: chrony: Wrap disable/enable NTP in test conditions [Kyle Harding]
+> * tests: os: Add helper to write or remove properties in config.json [Kyle Harding]
+> 
+</details>
+
 # v2.100.10
 ## (2022-07-25)
 
