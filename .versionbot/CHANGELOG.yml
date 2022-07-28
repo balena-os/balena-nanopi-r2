@@ -1,4 +1,19 @@
 - commits:
+    - subject: Update build and deploy workflow to v0.0.9
+      hash: b68bd2da7ad4be83c13401228571c3db2b76f641
+      body: |
+        This update will deploy as final when automation tests have been passed
+        for the previous merge commit.
+      footer:
+        Changelog-entry: Update build and deploy workflow to v0.0.9
+        changelog-entry: Update build and deploy workflow to v0.0.9
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.100.11+rev2
+  date: 2022-07-28T16:48:24.034Z
+- commits:
     - subject: Update contracts to 9db49d2fbb34542f53bf496135c32cccf5df487c
       hash: f3f63f2f5feaee60600dad04dea39044b3fb4460
       body: Update contracts
