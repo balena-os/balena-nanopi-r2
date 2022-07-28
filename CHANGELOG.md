@@ -1,6 +1,11 @@
 # v2.89.8
 ## (2022-01-29)
 
+# v2.100.11+rev2
+## (2022-07-28)
+
+* Update build and deploy workflow to v0.0.9 [Alex Gonzalez]
+
 # v2.100.11+rev1
 ## (2022-07-27)
 
