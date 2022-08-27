@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 3bd4b2097a2796afc9a56a580e555982aad4f10b
+      hash: 6a1d245d1bd4f45deb5b63194458cc2d0c593644
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 3bd4b2097a2796afc9a56a580e555982aad4f10b
+        changelog-entry: Update contracts to 3bd4b2097a2796afc9a56a580e555982aad4f10b
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "imx8mm-var-som: Add device type"
+              hash: a26ca290387c3c250b59d1b49df45c8a9ea9a89a
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.13
+          title: "'imx8mm-var-som: Add imx8mm-var-som devkit device type'"
+          date: 2022-08-26T11:11:21.899Z
+  version: 2.102.0+rev1
+  title: "'Update contracts digest to 3bd4b20'"
+  date: 2022-08-27T11:06:10.751Z
+- commits:
     - subject: Update layers/meta-balena to 09dd67ef6a3abd1e9048bb39a2b9a02dc3af18c3
       hash: c1c8571ba5dfe07581b0c89adbe13d9b5ebc8cd8
       body: Update layers/meta-balena
