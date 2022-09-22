@@ -1,6 +1,31 @@
 # v2.89.8
 ## (2022-01-29)
 
+# v2.105.2
+## (2022-09-22)
+
+
+<details>
+<summary> Update layers/meta-balena to d17b08668a56aa67c7b55594c3c910e66fbd4baf [renovate[bot]] </summary>
+
+> ## meta-balena-2.105.2
+> ### (2022-09-22)
+> 
+> * contributing-device-support.md: Clarify repo set-up in balenaOS org [Florin Sarbu]
+> 
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to ce91b3f1807f5dc1d1ee861a164957215757d8a0 [renovate[bot]] </summary>
+
+> ## meta-balena-2.105.2
+> ### (2022-09-22)
+> 
+> * contributing-device-support.md: Clarify repo set-up in balenaOS org [Florin Sarbu]
+> 
+</details>
+
 # v2.105.0
 ## (2022-09-21)
 
