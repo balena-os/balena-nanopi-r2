@@ -1,4 +1,29 @@
 - commits:
+    - subject: Update contracts to 67fb73772ae7ecfb93109e9e42e8b33465a61ec0
+      hash: 9ab1a5bf753b7f1d0809f13da2ca7584ac8d3ca7
+      body: Update contracts
+      footer:
+        Changelog-entry: Update contracts to 67fb73772ae7ecfb93109e9e42e8b33465a61ec0
+        changelog-entry: Update contracts to 67fb73772ae7ecfb93109e9e42e8b33465a61ec0
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "hw+device-type: Add jetson-agx-orin-devkit device type"
+              hash: 9b5a7433a5965ed3152a63b9cab756e9cc68c015
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io>
+                signed-off-by: Alexandru Costache <alexandru@balena.io>
+              author: Alexandru Costache
+          version: contracts-2.0.22
+          title: ""
+          date: 2022-10-24T14:57:49.013Z
+  version: 2.105.16+rev2
+  title: ""
+  date: 2022-10-24T16:31:10.293Z
+- commits:
     - subject: Update contracts to 38de093f2a5afdb1948b295ba11a18b6ebe626e9
       hash: 15bb3ee4f0ef86302964fb481614a7101fed700c
       body: Update contracts
