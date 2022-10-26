@@ -1,4 +1,20 @@
 - commits:
+    - subject: add header to CHANGELOG file
+      hash: d7bf46a92c2687fe61d7e1874106a1a64bb936b9
+      body: |
+        All device repositories CHANGELOG files have this header and it is used
+        by some automation scripts.
+      footer:
+        Changelog-entry: add header to CHANGELOG file
+        changelog-entry: add header to CHANGELOG file
+        Signed-off-by: Alex Gonzalez <alexg@balena.io>
+        signed-off-by: Alex Gonzalez <alexg@balena.io>
+      author: Alex Gonzalez
+      nested: []
+  version: 2.105.17+rev2
+  title: ""
+  date: 2022-10-26T13:48:41.220Z
+- commits:
     - subject: Update contracts to c311e6f8a9832587b3bb687b22a92574b790c688
       hash: 4fb42847fa5d8cfdd52d3d2bff5add1f62aff485
       body: Update contracts
