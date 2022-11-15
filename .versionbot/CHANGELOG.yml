@@ -1,4 +1,38 @@
 - commits:
+    - subject: Update layers/meta-balena to f64f63370e54d5ed14e124578ed9193c765ade92
+      hash: 52723f5b3fa230118faa8516621cb49574a67b50
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to f64f63370e54d5ed14e124578ed9193c765ade92
+        changelog-entry: Update layers/meta-balena to f64f63370e54d5ed14e124578ed9193c765ade92
+      author: renovate[bot]
+      nested:
+        - commits:
+            - subject: "test: ssh-auth: fix test cases using custom keys"
+              hash: b24d92774a67cf0c0b83a29848bdcf6ed8a574db
+              body: >
+                There are two sets of keys used in this test, one stored in `/root/id`
+
+                which is created by the cloud suite to SSH via the proxy server, and
+
+                a custom key stored in `/root/test_id` used in some of the subtests.
+
+
+                Fix the test cases using the custom key to use the correct private key.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-2.106.7
+          title: ""
+          date: 2022-11-15T15:37:55.466Z
+  version: 2.106.7
+  title: ""
+  date: 2022-11-15T19:00:23.962Z
+- commits:
     - subject: Update balena-yocto-scripts to 3fbd0884bd7d599664587d0ab25fea22d77323ba
       hash: b38b6090c42bc1d869cef7ad8513ecab478d9f27
       body: Update balena-yocto-scripts
