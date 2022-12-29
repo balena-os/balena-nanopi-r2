@@ -1,6 +1,78 @@
 Change log
 -----------
 
+# v2.108.9
+## (2022-12-29)
+
+
+<details>
+<summary> Update layers/meta-balena to 95d8b0c5bfb36a164081f417b52c8de16f2dc474 [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.9
+> ### (2022-12-29)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 1dcb432 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.11.8
+>> #### (2022-12-28)
+>> 
+>> * chore(deps): update dependency eslint-config-prettier to 8.5.0 [renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to e45cf66e8d8f7145127614153a2694c9a9850ed7 [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.9
+> ### (2022-12-29)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 1dcb432 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.11.8
+>> #### (2022-12-28)
+>> 
+>> * chore(deps): update dependency eslint-config-prettier to 8.5.0 [renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
+
+<details>
+<summary> Update layers/meta-balena to 68ec8ca1388c8e442acf1235dc573aeb12ff385a [renovate[bot]] </summary>
+
+> ## meta-balena-2.108.9
+> ### (2022-12-29)
+> 
+> 
+> <details>
+> <summary> Update tests/leviathan digest to 1dcb432 [renovate[bot]] </summary>
+> 
+>> ### leviathan-2.11.8
+>> #### (2022-12-28)
+>> 
+>> * chore(deps): update dependency eslint-config-prettier to 8.5.0 [renovate[bot]]
+>> 
+> 
+> </details>
+> 
+> 
+
+</details>
+
 # v2.108.6
 ## (2022-12-27)
 
