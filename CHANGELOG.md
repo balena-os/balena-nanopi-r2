@@ -1,6 +1,31 @@
 Change log
 -----------
 
+# v2.112.13+rev1
+## (2023-02-22)
+
+
+<details>
+<summary> Update contracts to 7e5420c232e35b678f2138d9878f1d1fc921b1cf [Renovate Bot] </summary>
+
+> ## contracts-2.0.50
+> ### (2023-02-22)
+> 
+> * hw.device-type: Rename radxaFlash protocol to usbMassStorage [Alexandru Costache]
+> 
+> ## contracts-2.0.49
+> ### (2023-02-22)
+> 
+> * patch: Fix spelling for eMMC in Radxa-zero contract [Vipul Gupta (@vipulgupta2048)]
+> 
+> ## contracts-2.0.48
+> ### (2023-02-22)
+> 
+> * hw.device-type: Various fixes [Alexandru Costache]
+> 
+
+</details>
+
 # v2.112.13
 ## (2023-02-22)
 
