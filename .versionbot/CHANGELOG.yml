@@ -1,4 +1,34 @@
 - commits:
+    - subject: Update layers/meta-balena to 31843b108269c3147c8ae14b75ec533ea1b52ca5
+      hash: d48651f3369c510083c52bc129870b3ce250083f
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 31843b108269c3147c8ae14b75ec533ea1b52ca5
+        changelog-entry: Update layers/meta-balena to 31843b108269c3147c8ae14b75ec533ea1b52ca5
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "tests/os: skip boot switch during provisioning"
+              hash: 7320af76d0a64561ff563384e5710f37c27a5852
+              body: |
+                The imx8mm-var-dart-plt also uses a custom implementation
+                for detecting the boot switch, so let's make use of the
+                existing support in meta-balena for the testbot provisioning
+                use-case and add this DT in the Autokit.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alexandru Costache <alexandru@balena.io
+                signed-off-by: Alexandru Costache <alexandru@balena.io
+              author: Alexandru Costache
+              nested: []
+          version: meta-balena-3.0.12
+          title: ""
+          date: 2023-07-16T10:42:23.885Z
+  version: 3.0.12
+  title: ""
+  date: 2023-07-16T12:40:49.050Z
+- commits:
     - subject: Update layers/meta-balena to 146e74b5bc28ae5ed734835a4d5a71cb974f51c6
       hash: 2d03399be3550b7d1d03a801b3441b4a5edd57d3
       body: Update layers/meta-balena
