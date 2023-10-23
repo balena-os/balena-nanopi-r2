@@ -1,4 +1,36 @@
 - commits:
+    - subject: Update layers/meta-balena to c1ed98a9e945d0f1ba684204c2fc10d3fdf59072
+      hash: 0479bb3bf6b30d3b0cbe9aea7a798d3de0e2ed1c
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to c1ed98a9e945d0f1ba684204c2fc10d3fdf59072
+        changelog-entry: Update layers/meta-balena to c1ed98a9e945d0f1ba684204c2fc10d3fdf59072
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "resin-device-progress: Add status code check and error reporting"
+              hash: 43ad69ed6a770c90e43a9ea844a32d7308a8ad45
+              body: >
+                This script is used by balenaHup to report provisioning failures
+                to
+
+                the cloud. Adding retries, return status code check and error output
+
+                should make it more resilient and easier to debug.
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: meta-balena-4.0.29
+          title: ""
+          date: 2023-10-23T13:07:12.186Z
+  version: 4.0.29
+  title: ""
+  date: 2023-10-23T15:49:49.919Z
+- commits:
     - subject: Update balena-yocto-scripts to 39430b27390c28c4b055fb8711005600112a6951
       hash: 5c5ca7ebedf3d495ccd45a8a17f28ee81466f628
       body: Update balena-yocto-scripts
