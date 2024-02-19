@@ -1,4 +1,54 @@
 - commits:
+    - subject: Update layers/meta-balena to a662615594a604d6f84b8fd47a904a2b1d5be9da
+      hash: a36e2c79cb3ab2c0d07bb847b8fe47a670a3d949
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to a662615594a604d6f84b8fd47a904a2b1d5be9da
+        changelog-entry: Update layers/meta-balena to a662615594a604d6f84b8fd47a904a2b1d5be9da
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update tests/leviathan digest to 95a9d72
+              hash: 16d56c258da245227711868d61df9b49b29842cb
+              body: Update tests/leviathan
+              footer:
+                Change-type: patch
+                change-type: patch
+              author: Self-hosted Renovate Bot
+              nested:
+                - commits:
+                    - subject: Update Lock file maintenance
+                      hash: 491d5df14d6197c1acae3542d4e950869e710309
+                      body: |
+                        Update
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.59
+                  title: ""
+                  date: 2024-02-19T00:47:50.443Z
+                - commits:
+                    - subject: Update core/contracts digest to 0c54ce2
+                      hash: bfb9b6bd67bf8bfe6a337ebcb439aa7f3852fb5c
+                      body: |
+                        Update core/contracts
+                      footer:
+                        Change-type: patch
+                        change-type: patch
+                      author: Self-hosted Renovate Bot
+                      nested: []
+                  version: leviathan-2.29.58
+                  title: ""
+                  date: 2024-02-14T12:19:16.753Z
+          version: meta-balena-5.1.35
+          title: ""
+          date: 2024-02-19T05:22:59.235Z
+  version: 5.1.35
+  title: ""
+  date: 2024-02-19T13:26:44.228Z
+- commits:
     - subject: Update layers/poky to b110cd3d821b6d0ef310fb05465087255c7bdca3
       hash: 45daa7227987fa6a57c49a245bab8c473b5682e6
       body: Update layers/poky
