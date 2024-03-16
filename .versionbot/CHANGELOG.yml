@@ -1,4 +1,44 @@
 - commits:
+    - subject: Update layers/meta-balena to 7e2a78213b4fb5915c1f8ecc042ffb1b38d9a013
+      hash: 832ad59a6b6d4b9ef45e8118026e8611fb8bd618
+      body: Update layers/meta-balena
+      footer:
+        Changelog-entry: Update layers/meta-balena to 7e2a78213b4fb5915c1f8ecc042ffb1b38d9a013
+        changelog-entry: Update layers/meta-balena to 7e2a78213b4fb5915c1f8ecc042ffb1b38d9a013
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: Update NetworkManager to version 1.46.0
+              hash: 9d88a4566b7a9afc7226df97b40d266f0ece64b6
+              body: >
+                This recipe is taken from meta-openembedded commit
+
+                f240c5cecf3d7ee75d5ec1ece4c412c94434a879 with the only changes
+                being that
+
+                we removed from it the init.d, iwd, and dhcpcd daemon
+                configurations which
+
+                are not used by us.
+
+
+                This is the latest stable version available.
+              footer:
+                Change-type: minor
+                change-type: minor
+                Changelog-entry: Update NetworkManager to version 1.46.0
+                changelog-entry: Update NetworkManager to version 1.46.0
+                Signed-off-by: Florin Sarbu <florin@balena.io>
+                signed-off-by: Florin Sarbu <florin@balena.io>
+              author: Florin Sarbu
+              nested: []
+          version: meta-balena-5.2.0
+          title: ""
+          date: 2024-03-16T12:02:30.009Z
+  version: 5.2.0
+  title: ""
+  date: 2024-03-16T14:10:08.178Z
+- commits:
     - subject: Update contracts to 908a50dc79192e66ab3fd518f166be05382c2c6e
       hash: cb6d36a93d19593b17f9795b2b351b7f50729ed9
       body: Update contracts
