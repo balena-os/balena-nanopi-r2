@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 3b4142ba334b6b1c767a6755c2742c980d2e6b16
+      hash: 1464b2da601adae98706367da66936990b6e01e5
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 3b4142ba334b6b1c767a6755c2742c980d2e6b16
+        changelog-entry: Update balena-yocto-scripts to 3b4142ba334b6b1c767a6755c2742c980d2e6b16
+      author: Self-hosted Renovate Bot
+      nested:
+        - commits:
+            - subject: "balena-deploy: deploy secure boot lock artifacts if available"
+              hash: 01378a49b0b2264afcf6d2dc4d016e2be206fde7
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Alex Gonzalez <alexg@balena.io>
+                signed-off-by: Alex Gonzalez <alexg@balena.io>
+              author: Alex Gonzalez
+              nested: []
+          version: balena-yocto-scripts-1.25.4
+          title: ""
+          date: 2024-07-06T09:01:53.726Z
+  version: 5.3.25+rev1
+  title: ""
+  date: 2024-07-06T12:21:36.450Z
+- commits:
     - subject: Update layers/meta-balena to 6d368bce75115252c2a9253aebd3444d19771595
       hash: 0edff434d38867d56f9908ceebd64e48520fe217
       body: Update layers/meta-balena
