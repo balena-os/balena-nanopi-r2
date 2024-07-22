@@ -1,4 +1,16 @@
 - commits:
+    - subject: Update .gitmodules with submodule branch information
+      hash: 192dcdb86b9af5fab6cc9ae05e7c189080f2704b
+      body: ""
+      footer:
+        Changelog-entry: Update .gitmodules with submodule branch information
+        changelog-entry: Update .gitmodules with submodule branch information
+      author: Kyle Harding
+      nested: []
+  version: 5.4.1+rev2
+  title: ""
+  date: 2024-07-22T14:03:43.429Z
+- commits:
     - subject: Update balena-yocto-scripts to d59fac4cce1dcff0b423ac97aeccbd7f4486b9c2
       hash: 8e91d9231826d5763cb5a68b57aa886e8daa1195
       body: Update balena-yocto-scripts
