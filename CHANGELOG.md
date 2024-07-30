@@ -1,6 +1,31 @@
 Change log
 -----------
 
+# v5.4.1+rev8
+## (2024-07-30)
+
+
+<details>
+<summary> Update balena-yocto-scripts to ef6b7efa3a4f697e835412e6012a2f8bbeb94d37 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.14
+> ### (2024-07-29)
+> 
+> * Update balena-os/leviathan digest to 36aafe0 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.13
+> ### (2024-07-29)
+> 
+> * Update actions/checkout action to v4.1.7 [balena-renovate[bot]]
+> 
+> ## balena-yocto-scripts-1.25.12
+> ### (2024-07-29)
+> 
+> * Update Pin dependencies [balena-renovate[bot]]
+> 
+
+</details>
+
 # v5.4.1+rev7
 ## (2024-07-29)
 
