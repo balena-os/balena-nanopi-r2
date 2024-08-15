@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 87762ec55616db7a361d41ae0fb115f8a9d4e034
+      hash: 9f4fa9604fe9426c833c01d6c0742424007b40c0
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 87762ec55616db7a361d41ae0fb115f8a9d4e034
+        changelog-entry: Update balena-yocto-scripts to 87762ec55616db7a361d41ae0fb115f8a9d4e034
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: Add mermaid flowchart to yocto workflow README
+              hash: af6f93c1a415ecf90785428c32b31801b26ad160
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Kyle Harding <kyle@balena.io>
+                signed-off-by: Kyle Harding <kyle@balena.io>
+              author: Kyle Harding
+              nested: []
+          version: balena-yocto-scripts-1.25.23
+          title: ""
+          date: 2024-08-15T20:45:12.698Z
+  version: 5.4.1+rev18
+  title: ""
+  date: 2024-08-15T23:56:04.703Z
+- commits:
     - subject: Update balena-yocto-scripts to 8450f5dfee536fe1cc26fda70916875857a7106f
       hash: f19dbd144a64bd9a9ca658a490657bf5b01ea6ab
       body: Update balena-yocto-scripts

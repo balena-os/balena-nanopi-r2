@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v5.4.1+rev18
+## (2024-08-15)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 87762ec55616db7a361d41ae0fb115f8a9d4e034 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.23
+> ### (2024-08-15)
+> 
+> * Add mermaid flowchart to yocto workflow README [Kyle Harding]
+> 
+
+</details>
+
 # v5.4.1+rev17
 ## (2024-08-12)
 
