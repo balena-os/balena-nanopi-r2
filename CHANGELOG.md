@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v5.4.1+rev20
+## (2024-08-20)
+
+
+<details>
+<summary> Update contracts to 59752b7f99c1e5576c605a2f4188f9661468319f [balena-renovate[bot]] </summary>
+
+> ## contracts-2.0.113
+> ### (2024-08-20)
+> 
+> * iotdin-imx8p: Update the devices contract [Valentin Raevsky]
+> 
+
+</details>
+
 # v5.4.1+rev19
 ## (2024-08-19)
 
