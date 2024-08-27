@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v5.4.1+rev23
+## (2024-08-27)
+
+
+<details>
+<summary> Update balena-yocto-scripts to a3dfa265480986251193a989b1077939f38c4dc3 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.26
+> ### (2024-08-27)
+> 
+> * Fix if condition for checking merge commit test results [rcooke-warwick]
+> 
+
+</details>
+
 # v5.4.1+rev22
 ## (2024-08-23)
 
