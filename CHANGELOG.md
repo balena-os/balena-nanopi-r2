@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v5.4.1+rev24
+## (2024-08-29)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 6270e6a763450e7bd98e08b699dc22ea55a19bc5 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.27
+> ### (2024-08-29)
+> 
+> * use apt-get to install s4cmd instead of pip [rcooke-warwick]
+> 
+
+</details>
+
 # v5.4.1+rev23
 ## (2024-08-27)
 

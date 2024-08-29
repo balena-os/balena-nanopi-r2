@@ -1,4 +1,33 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 6270e6a763450e7bd98e08b699dc22ea55a19bc5
+      hash: 58ed8f7e530f7e8202ee6169f56a95587d087f37
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 6270e6a763450e7bd98e08b699dc22ea55a19bc5
+        changelog-entry: Update balena-yocto-scripts to 6270e6a763450e7bd98e08b699dc22ea55a19bc5
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: use apt-get to install s4cmd instead of pip
+              hash: 938730ae60d60574f9abf757c1c4efcc4e526a2f
+              body: >
+                using pip to install python packages also installable by debian
+                is not recommended, and leads to errors while trying to do so.
+                Switch to using apt-get to install s4cmd to address this
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: balena-yocto-scripts-1.25.27
+          title: ""
+          date: 2024-08-29T13:53:51.392Z
+  version: 5.4.1+rev24
+  title: ""
+  date: 2024-08-29T19:57:48.531Z
+- commits:
     - subject: Update balena-yocto-scripts to a3dfa265480986251193a989b1077939f38c4dc3
       hash: cd1a6a315c0556da3dd4307f48c505b4a56e0005
       body: Update balena-yocto-scripts
