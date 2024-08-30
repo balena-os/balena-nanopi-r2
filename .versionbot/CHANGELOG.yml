@@ -1,4 +1,30 @@
 - commits:
+    - subject: Update balena-yocto-scripts to 5c8805dcd0013ca3aab6ec82e094595ad8f6780b
+      hash: b907a3bcb6ddecb113e3b199f2761f0a3767d5fc
+      body: Update balena-yocto-scripts
+      footer:
+        Changelog-entry: Update balena-yocto-scripts to 5c8805dcd0013ca3aab6ec82e094595ad8f6780b
+        changelog-entry: Update balena-yocto-scripts to 5c8805dcd0013ca3aab6ec82e094595ad8f6780b
+      author: balena-renovate[bot]
+      nested:
+        - commits:
+            - subject: checkout private contracts for test job
+              hash: d49882c54127d8b805191ff313a3a00d1c163590
+              body: ""
+              footer:
+                Change-type: patch
+                change-type: patch
+                Signed-off-by: Ryan Cooke <ryan@balena.io>
+                signed-off-by: Ryan Cooke <ryan@balena.io>
+              author: rcooke-warwick
+              nested: []
+          version: balena-yocto-scripts-1.25.28
+          title: ""
+          date: 2024-08-30T14:24:42.877Z
+  version: 5.4.1+rev25
+  title: ""
+  date: 2024-08-30T18:54:19.670Z
+- commits:
     - subject: Update balena-yocto-scripts to 6270e6a763450e7bd98e08b699dc22ea55a19bc5
       hash: 58ed8f7e530f7e8202ee6169f56a95587d087f37
       body: Update balena-yocto-scripts

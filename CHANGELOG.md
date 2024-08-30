@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v5.4.1+rev25
+## (2024-08-30)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 5c8805dcd0013ca3aab6ec82e094595ad8f6780b [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.28
+> ### (Invalid date)
+> 
+> * checkout private contracts for test job [rcooke-warwick]
+> 
+
+</details>
+
 # v5.4.1+rev24
 ## (2024-08-29)
 
