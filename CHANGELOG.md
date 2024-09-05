@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v5.4.1+rev31
+## (2024-09-05)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 0f0b5cc033b03b5535c13082000225f179a60758 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.36
+> ### (2024-09-05)
+> 
+> * Update balena-os/leviathan digest to 5db2b5d [balena-renovate[bot]]
+> 
+
+</details>
+
 # v5.4.1+rev30
 ## (2024-09-04)
 
