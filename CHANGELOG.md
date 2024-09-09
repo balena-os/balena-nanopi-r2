@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v5.4.1+rev33
+## (2024-09-09)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 2fc3e95d8c64dd36f963fda5a2f770ef8cd350f0 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.38
+> ### (2024-09-09)
+> 
+> * Include semver when bumping leviathan action [Kyle Harding]
+> 
+
+</details>
+
 # v5.4.1+rev32
 ## (2024-09-06)
 
