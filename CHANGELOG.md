@@ -1,6 +1,21 @@
 Change log
 -----------
 
+# v5.4.1+rev37
+## (2024-09-18)
+
+
+<details>
+<summary> Update balena-yocto-scripts to 8082486ee52f464cb11d9c7abc2c3654445087b3 [balena-renovate[bot]] </summary>
+
+> ## balena-yocto-scripts-1.25.42
+> ### (2024-09-18)
+> 
+> * only upload artifacts when test_matrix is defined [rcooke-warwick]
+> 
+
+</details>
+
 # v5.4.1+rev36
 ## (2024-09-13)
 
